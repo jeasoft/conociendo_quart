@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+      body { font-family: 'Droid Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+
+class: center, middle
+# Conociendo a Quart
+
+#### Jearel Alcántara Febrier
+
+- .left[[@jeasoft](https://github.com/jeasoft) donde sea]
+- .left[jeasoft@gmail.com]
+
+---
+
+class: center, middle
+# Qué es Quart?
+
+- .left[Microframework para desarrollo de aplicaciones web hecho en Python basado en [Asyncio](https://docs.python.org/3/library/asyncio.html).]
+- .left[Enfocado en la sencillez al momento de desarrollo.]
+- .left[Websockets son pasajeros de primer nivel.]
+- .left[Su creador lo llama como la "Evolución de [Flask](http://flask.pocoo.org/)".]
+
+---
+
+class: center, middle
+# Y KLK con Quart?
+- .left[Python 3.6 como mínima versión]
+- .left[[Jinja2](http://jinja.pocoo.org/docs/2.10/) como motor de templates.]
+- .left[Se sube al camión de [ASGI (Asynchronous Server Gateway Interface)](https://github.com/django/asgiref/blob/master/specs/asgi.rst)]
+- .left[[Hypercorn](https://pgjones.gitlab.io/hypercorn/) como web server recomendado.]
+- .left[[Secure Cookie Sessions](https://pgjones.gitlab.io/quart/session_storage.html).]
+- .left[Soporte a WebSockets y a HTTP/2.]
+
+---
+class: center, middle
+# Evolución de Flask, tu ta loco?
+- .left[Compatible con una cantidad X de extensiones de Flask [(Aquí)](https://pgjones.gitlab.io/quart/flask_extensions.html#supported-extensions).]
+- .left[Guía para migrar apps de Flask a Quart [(Dale!)](https://pgjones.gitlab.io/quart/flask_migration.html).]
+- .left[Blueprints (igualitico que en Flask) [(Que sí león!)](https://pgjones.gitlab.io/quart/blueprints.html).]
+- .left[No lo dije yo, [lo dijo el](https://pgjones.gitlab.io/quart/flask_evolution.html).]
+
+---
+
+class: center, middle
+# Dame Código!!
+- Básiquillo:
+
+.left[```python
+from quart import Quart
+
+app = Quart(__name__)
+
+@app.route('/')
+async def hello():
+    return 'Hola Pueblo!'
+
+app.run()
+```]
+---
+
+class: center, middle
+# Notan el parecido a Flask?
+Chequea:
+
+.left[```python
+
+from flask import Flask
+app = Flask(__name__)
+
+@app.route("/")
+def hello():
+    return "Hello World!"
+
+app.run()
+```]
+---
+
+class: center, middle
+# Documentación disponible
+- .left[[Web oficial](https://pgjones.gitlab.io/quart/index.html)]
+- .left[[Repositorio de código oficial en gitlab](https://gitlab.com/pgjones/quart)]
+- .left[[Mirror en Github](https://github.com/pgjones/quart)]
+- .left[[HowTos!](https://pgjones.gitlab.io/quart/index.html#how-to-guides)]
+- .left[Y porqué no, en la documentación de [Flask](http://flask.pocoo.org/docs/1.0/) (XD)]
+---
+class: center, middle
+# Preguntas?
+---
+
+class: center, middle
+background-image: url(thanks.jpg)
+
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>
