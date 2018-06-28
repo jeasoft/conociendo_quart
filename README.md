@@ -7,7 +7,7 @@
 
 ---
 
-# Qué es Quart?
+# ¿Qué es Quart?
 
 - Microframework para desarrollo de aplicaciones web hecho en Python basado en [Asyncio](https://docs.python.org/3/library/asyncio.html).
 - Enfocado en la sencillez al momento de desarrollo.
@@ -16,7 +16,7 @@
 
 ---
 
-# Y KLK con Quart?
+# ¿Y KLK con Quart?
 - Python 3.6 como mínima versión
 - [Jinja2](http://jinja.pocoo.org/docs/2.10/) como motor de templates.
 - Se sube al camión de [ASGI (Asynchronous Server Gateway Interface)](https://github.com/django/asgiref/blob/master/specs/asgi.rst)
@@ -26,7 +26,7 @@
 
 ---
 
-# Evolución de Flask, tu ta loco?
+# Evolución de Flask, ¿tu ta loco?
 - Compatible con una cantidad X de extensiones de Flask [(Aquí)](https://pgjones.gitlab.io/quart/flask_extensions.html#supported-extensions).
 - Guía para migrar apps de Flask a Quart [(Dale!)](https://pgjones.gitlab.io/quart/flask_migration.html).
 - Blueprints (igualitico que en Flask) [(Que sí león!)](https://pgjones.gitlab.io/quart/blueprints.html).
@@ -34,8 +34,8 @@
 
 ---
 
-# Dame Código!!
-- Básiquillo:
+# ¡¡Dame Código!!
+- #ThuRehalHolaMundoh!:
 Quart
 
 ```python
@@ -51,7 +51,7 @@ app.run()
 ```
 ---
 
-# Notan el parecido a Flask?
+# ¿Notan el parecido a Flask?
 Chequea:
 
 ```python
@@ -74,10 +74,10 @@ app.run()
 - Y porqué no, en la documentación de [Flask](http://flask.pocoo.org/docs/1.0/) (XD)
 ---
 
-# Preguntas?
+# ¿Preguntas?
 ---
 
-# Muchas Gracias!
+# ¡Muchas Gracias!
 ### Mi sobrina dice:
 ![alt text](thanks.jpg)
 [@jeasoft](https://github.com/jeasoft)
